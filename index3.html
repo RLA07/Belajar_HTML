@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World!</title>
+  <style>
+   body {
+	  margin: 0;
+	  padding: 0;
+	  height: 100vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: relative; /* Tambahkan properti position: relative; */
+	}
+	.background {
+	  background-image: url('bg.jpg'); /* Ganti 'background.jpg' dengan nama file background yang Anda inginkan */
+	  background-size: cover;
+	  background-position: center;
+	  height: 100%;
+	  width: 100%;
+	  position: absolute; /* Tambahkan properti position: absolute; */
+	  z-index: -1; /* Pastikan gambar latar belakang berada di belakang konten lain */
+	  opacity: 0.5; /* Opacity untuk gambar latar belakang */
+	}
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background-color: rgb(0, 0, 0); /* Ubah opasitas di sini (nilai keempat), semakin kecil nilainya, semakin gelap efeknya */
+	  z-index: -2;
+	}
+    .container {
+      text-align: center;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Hello, World!</h1>
+  </div>
+
+</body>
+</html>

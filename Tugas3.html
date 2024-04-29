@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<title>Data Diri</title>
+<style>
+    body, html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background-color: rgba(0, 0, 0, 0.63);
+	  z-index: -1;
+	}
+	.background {
+	  background-image: url('bg.jpg');
+	  background-size: cover;
+	  height: 100%;
+	  width: 100%;
+	  position: absolute;
+	  z-index: -2;  
+	}
+    .container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+    .profile {
+        text-align: center;
+        margin-right: 20px;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 5px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile h2 {
+        margin: 10px 0;
+        color: #FFF;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		font-family: 'Carter One'; 
+    }
+    .description {
+		max-width: 45%;
+		margin-left: 5%;
+		color: #FFF;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		font-family: 'Times New Roman'; 
+    }
+    .description h1 {
+        margin-top: 0;
+        color: #FFF;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .description p {
+        color: #FFF;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+	
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background"></div>
+<div class="overlay"></div>
+<div class="container">
+    <div class="profile">
+        <img src="foto.jpg" alt="Foto Profile">
+        <h2>Rangga Ayi Pratama</h2>
+    </div>
+    <div class="description">
+        <h1>Tentang Saya</h1>
+        <p>Saya adalah seorang mahasiswa yang berkuliah di Politeknik Negeri Sriwijaya. Saya mengambil jurusan Teknik Komputer karena saya merasa minat dan bakat saya ada di bidang komputer, saya sangat menyukai tentang teknologi khususnya pada bidang komputer seperti membuat project IoT sederhana, merakit sebuah komputer, belajar pemrograman, hingga mempelajari bagaimana internet dan jaringan kompuer bekerja.</p>
+		 <ul align="left" style="list-style-type: none; padding:0;">
+			<li><strong>Umur:</strong> 18 tahun</li>
+			<li><strong>Alamat:</strong> Jl. Jalan</li>
+			<li><strong>Email:</strong> ranggaayipratama@gmail.com</li>
+			<li><strong>Telepon:</strong> +62 857 8869 4152</li>
+		</ul>
+    </div>
+</div>
+</body>
+</html>
