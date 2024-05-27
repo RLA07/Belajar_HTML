@@ -1,43 +1,116 @@
 <html>
-<head>
-<title>Membuat Blog</title>
-</head>
-<body bgcolor="white">
-<font face=Courier>
-<center><tt><h1 style="text-shadow: 0 0 0.5em blue"><center class="Text" >BIODATA</center></h1></tt>
-<font face=Courier>
-<marquee align="center" behavior="alternate" scrollamount="6"><font color="blue" size="5"class= "Animation" >-----------------------------------------------------------------------------------------------</h1></tt>
-</marquee>
-   <ul align="left" style="list-style-type: none; padding:0;">
-   <img style="width: 10%; height: auto; border: 8px; solid black; border-style: double;" src="foto.jpg" alt="Foto Profil"></img>
-   <br>
-   <br>
-        <li><strong>Nama: Rangga Ayi Pratama</strong></li>
-        <li><strong>Umur:</strong> 18 tahun</li>
-        <li><strong>Alamat:</strong> Jl. Lunjuk Jaya</li>
-        <li><strong>Pendidikan:</strong> D3 Teknik Komputer</li>
-        <li><strong>Sekolah:</strong> Politeknik Negeri Sriwijaya</li>
-        <li><strong>Email:</strong> ranggaayipratama@example.com</li>
-        <li><strong>Telepon:</strong> +6285788694152</li>
-    </ul>
-	<p align="left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
-    </p>
-	<p align="left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
-    </p>
-	<p align="left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
-    </p>
-	<p align="left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
-    </p>
-	
-	
-	<form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload File" name="submit">
-    </form>
-	
-</body>
+    <head>
+        <title>Membuat Blog</title>
+        <style>
+            body{
+                padding: 5%;
+                font-family: Arial;
+            }
+            h1{
+                font-size:40px;
+                text-align:center;
+                font-family: ;
+            }
+            table{
+                list-style-type: none; 
+                padding:0;
+                border: none;
+            }
+            img{
+                width: 95%; 
+                height: 95%; 
+                border-radius: 12%;
+            }
+            .bg{
+                background-color: black;
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border-radius: 12%;
+            }
+            td.titik_dua{
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-block: 0px;
+            }
+            td.st {
+                font-weight: bold;
+            }
+
+            p{
+                text-align: justify;
+            }
+            a{
+                text-decoration: none;
+                color: #147cfc;
+            }
+            a:hover{
+                color:#0f64cb;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>BIODATA</h1>
+        <br>
+        <div class="bg">
+        <img src="foto.jpg" alt="Foto Profil">
+        </div>
+        <br><br>
+        <table>
+            <tr>
+                <td class="st">Nama</td>
+                <td class="titik_dua">:</td>
+                <td>Rangga Ayi Pratama</td>
+            </tr>
+            <tr>
+                <td class="st">Umur</td>
+                <td class="titik_dua">:</td>
+                <td>18 tahun</td>
+            </tr>
+            <tr>
+                <td class="st">Alamat</td>
+                <td class="titik_dua">:</td>
+                <td>Jl. Lunjuk Jaya</td>
+            </tr>
+            <tr>
+                <td class="st">Pendidikan</td>
+                <td class="titik_dua">:</td>
+                <td>D3 Teknik Komputer</td>
+            </tr>
+            <tr>
+                <td class="st">Sekolah</td>
+                <td class="titik_dua">:</td>
+                <td>Politeknik Negeri Sriwijaya</td>
+            </tr>
+            <tr>
+                <td class="st">Email</td>
+                <td class="titik_dua">:</td>
+                <td>ranggaayipratama@example.com</td>
+            </tr>
+            <tr>
+                <td class="st">Telepon</td>
+                <td class="titik_dua">:</td>
+                <td>+6285788694152</td>
+            </tr>
+        </table>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna eu malesuada pharetra. Duis pretium enim at dapibus accumsan. Sed sollicitudin sapien at enim consectetur, vitae laoreet lacus pretium. Nam id metus magna. Proin dapibus vel nunc et varius. Fusce ac dictum eros. Sed tincidunt euismod libero id aliquam. Ut id vestibulum enim. Donec mollis ex id consequat condimentum. Maecenas vestibulum nulla sit amet nisi vehicula, eget malesuada felis suscipit.
+        </p>
+        <b>
+            <span>Lihat selengkapnya: <a href="Tugas3.html">Klik Disini</a></span>
+        </b>
+        <br><br>
+    </body>
 </html>
